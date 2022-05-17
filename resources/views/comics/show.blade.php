@@ -4,11 +4,11 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
-            <div class="col-12 ps-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center">
                 <h1>Ecco le informazioni che ha cercato!</h1>
             </div>
-            <div class="col-4">
+            <div class="col-4 d-flex justify-content-center">
                 <div class="card mb-5" style="width: 18rem;">
                     <img src="{{ $comic->thumb }}" class="card-img-top" alt="{{ $comic->title }}">
                     <div class="card-body">
