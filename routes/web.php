@@ -13,4 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('/', "ComicsController");
+Route::resource('/', 'ComicsController');
+
+// Route::prefix('/')
+//     ->name("comics.")
+//     ->group(function () {
+//         Route::get('/', "ComicsController@index")->name("index");
+//         Route::get('/{id}', "ComicsController@show")->name("show");
+//     });
