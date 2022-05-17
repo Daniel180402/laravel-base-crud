@@ -5,8 +5,11 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-12 my-3 d-flex justify-content-center">
+            <div class="col-12 my-3 d-flex justify-content-around">
                 <h1>Comics:</h1>
+                <a href="{{route('comics.create')}}">
+                    <button class="btn btn-warning">Add Comic</button>
+                </a>
             </div>
             @foreach ($comics as $comic)
             <div class="col-4 d-flex justify-content-center">
